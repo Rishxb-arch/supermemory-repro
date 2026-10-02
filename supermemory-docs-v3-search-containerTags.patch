@@ -1,0 +1,13 @@
+diff --git a/apps/docs/self-hosting/quickstart.mdx b/apps/docs/self-hosting/quickstart.mdx
+index d0b3799..46c474e 100644
+--- a/apps/docs/self-hosting/quickstart.mdx
++++ b/apps/docs/self-hosting/quickstart.mdx
+@@ -148,7 +148,7 @@ curl http://localhost:6767/v3/search \
+   -H "Content-Type: application/json" \
+   -d '{
+     "q": "what food should I avoid?",
+-    "containerTag": "user_dhravya"
++    "containerTags": ["user_dhravya"]
+   }'
+ ```
+ </Tab>

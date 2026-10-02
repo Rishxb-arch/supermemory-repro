@@ -1,0 +1,25 @@
+--- a/install.sh (served from https://supermemory.ai/install, v0.0.8 era)
++++ b/install.sh
+@@ -89,7 +89,11 @@
+ # Determines whether the script can read user input. When piped from curl,
+ # stdin is the script body — we re-attach /dev/tty to read prompts.
+ have_tty() {
+-	[ "${SUPERMEMORY_NO_PROMPT:-}" != "1" ] && [ -r /dev/tty ] && [ -w /dev/tty ]
++	# -r/-w only check permissions; /dev/tty can exist with rw perms yet fail to
++	# open (ENXIO) when there is no controlling terminal (CI, docker without -t,
++	# agent/automation shells). Actually try to open it.
++	[ "${SUPERMEMORY_NO_PROMPT:-}" != "1" ] && [ -r /dev/tty ] && [ -w /dev/tty ] \
++		&& { : < /dev/tty > /dev/tty; } 2>/dev/null
+ }
+ 
+ should_auto_start() {
+@@ -172,7 +176,8 @@
+ if [ "${SUPERMEMORY_FORCE:-}" != "1" ] \
+ 	&& [ -n "$installed_version" ] \
+ 	&& [ "$installed_version" = "$version" ] \
+-	&& [ -x "$INSTALL_DIR/bin/$BIN_NAME" ]; then
++	&& [ -x "$INSTALL_DIR/bin/$BIN_NAME" ] \
++	&& [ -x "$BIN_DIR/$BIN_NAME" ]; then
+ 	ok "supermemory-server v$version is already installed — nothing to do"
+ 	info "Force a reinstall by re-running with SUPERMEMORY_FORCE=1 set."
+ 	exit 0

@@ -1,0 +1,28 @@
+
+supermemory lite
+Lite version is licensed upto 10k documents: read the license at git.new/memory
+
+  * encrypted local storage  /tmp/<tmpdir>/.supermemory
+  + encrypted local storage  ready · 912ms
+  * embeddings
+  + embeddings  local · Xenova/bge-base-en-v1.5 · 768d · 20ms
+  * http server  port 6768
+  + http server  listening on http://localhost:6768 · 2ms
+
+  > supermemory ready
+
+    url         http://localhost:6768
+    database    encrypted local storage (/tmp/<tmpdir>/.supermemory)
+    embeddings  local · Xenova/bge-base-en-v1.5 · 768d
+    workflow    rivet
+    api key     <redacted>
+    org id      3mQqYHvmEhquyFsALKYXYx
+    boot        2.8s
+
+
+[ingest] memory limit 1.0 GB above baseline (1.3 GB) · 2 concurrent — set SUPERMEMORY_EMBEDDING_RAM_LIMIT=ngb to change
+[Workflow] Document zqyKzd2pqdPNcJDPr2sXSN embedding 1 chunks (1 batches)
+[Workflow] Document zqyKzd2pqdPNcJDPr2sXSN stored 1 embedded chunks
+[Workflow] Document zqyKzd2pqdPNcJDPr2sXSN starting memory agent (1 chunks)
+[Workflow] Document zqyKzd2pqdPNcJDPr2sXSN memory agent completed (40ms, 0 memories)
+[19:01:34] [Workflow] Document zqyKzd2pqdPNcJDPr2sXSN finalized: 1 chunks, 0 memories

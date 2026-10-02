@@ -1,0 +1,12 @@
+t+20s status=indexing
+t+60s status=indexing
+t+120s status=indexing
+t+180s status=indexing
+search (containerTags) hits: 1
+[workflow] maintain-container-description ✗ Step "maintain-container-description" timed out after 30000ms
+[workflow] maintain-container-description ✗ Rollback traversal halted
+--- restarting server on the same data dir, LLM now answers the description call instantly
+Terminated
+after restart status=done
+Terminated
+data dir: /tmp/tmp.9eXqbSJYtA
