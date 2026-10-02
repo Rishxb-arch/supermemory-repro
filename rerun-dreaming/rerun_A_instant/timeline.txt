@@ -1,0 +1,45 @@
+T0 21:33:32 add body: {"content":"I am vegetarian.","containerTag":"u1","dreaming":"instant"}
+add response: {"id":"rYCHBy3xVdXeEKhdqbFh7R","status":"queued"}
+t+7s status=queued search_hits=0
+t+17s status=indexing search_hits=1
+t+27s status=indexing search_hits=1
+t+37s status=indexing search_hits=1
+t+47s status=indexing search_hits=1
+t+57s status=indexing search_hits=1
+t+67s status=indexing search_hits=1
+t+78s status=indexing search_hits=1
+t+88s status=indexing search_hits=1
+t+98s status=indexing search_hits=1
+t+108s status=indexing search_hits=1
+t+118s status=indexing search_hits=1
+t+128s status=indexing search_hits=1
+t+138s status=indexing search_hits=1
+t+148s status=indexing search_hits=1
+t+158s status=indexing search_hits=1
+t+168s status=indexing search_hits=1
+t+178s status=indexing search_hits=1
+t+189s status=indexing search_hits=1
+t+199s status=indexing search_hits=1
+t+209s status=indexing search_hits=1
+t+219s status=indexing search_hits=1
+t+229s status=indexing search_hits=1
+t+239s status=indexing search_hits=1
+t+249s status=indexing search_hits=1
+t+259s status=indexing search_hits=1
+t+269s status=indexing search_hits=1
+t+279s status=indexing search_hits=1
+t+290s status=indexing search_hits=1
+t+300s status=indexing search_hits=1
+t+310s status=indexing search_hits=1
+t+320s status=indexing search_hits=1
+t+330s status=indexing search_hits=1
+t+340s status=indexing search_hits=1
+t+350s status=indexing search_hits=1
+t+360s status=indexing search_hits=1
+t+370s status=indexing search_hits=1
+t+380s status=indexing search_hits=1
+t+390s status=indexing search_hits=1
+t+400s status=indexing search_hits=1
+t+411s status=indexing search_hits=1
+FINAL doc: {'status': 'indexing', 'dreaming': None, 'createdAt': '2026-10-02T16:03:32.998Z', 'updatedAt': '2026-10-02T16:03:39.434Z'}
+finished

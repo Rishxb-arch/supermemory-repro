@@ -68,5 +68,6 @@ is the one-line doc fix.
 | `repro_stuck_indexing.sh`, `mock_llm.py` | rough edge 2 (the script starts the server and the mock itself) |
 | `supermemory-docs-v3-search-containerTags.patch` | rough edge 3 |
 | `evidence/` | outputs of the 2 Oct run, with the local API key redacted |
+| [`rerun-dreaming/`](rerun-dreaming/rerun-dreaming.md) | Re-run with dreaming: instant vs dynamic: stuck `indexing` is not explained by dreaming |
 
 Not included: the server binary and runtime (hundreds of MB), local data directories, and the upstream source clone.

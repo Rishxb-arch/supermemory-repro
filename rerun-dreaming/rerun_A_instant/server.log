@@ -1,0 +1,51 @@
+
+supermemory lite
+Lite version is licensed upto 10k documents: read the license at git.new/memory
+
+  * encrypted local storage  /tmp/tmp.j6gyIGsWzP/.supermemory
+  + encrypted local storage  ready · 5.0s
+  * embeddings
+  + embeddings  local · Xenova/bge-base-en-v1.5 · 768d · 40ms
+  * http server  port 6781
+  + http server  listening on http://localhost:6781 · 11ms
+
+  > supermemory ready
+
+    url         http://localhost:6781
+    database    encrypted local storage (/tmp/tmp.j6gyIGsWzP/.supermemory)
+    embeddings  local · Xenova/bge-base-en-v1.5 · 768d
+    workflow    rivet
+    api key     sm_<redacted>
+    org id      CTWg2LSH9KaM3wG5EMqVVT
+    boot        11s
+
+  the api key above is auto-applied for unauthenticated localhost requests.
+
+[ingest] memory limit 1.0 GB above baseline (1.2 GB) · 2 concurrent — set SUPERMEMORY_EMBEDDING_RAM_LIMIT=ngb to change
+Memory not found for id x and orgId CTWg2LSH9KaM3wG5EMqVVT
+[21:33:33] [Extraction] Extracted with text
+  * local embeddings  Xenova/bge-base-en-v1.5 · first-run download
+      pool: 1 worker · 1 thread each
+      cache: /tmp/tmp.j6gyIGsWzP/.supermemory/models
+[Workflow] Document rYCHBy3xVdXeEKhdqbFh7R embedding 1 chunks (1 batches)
+      downloading model from huggingface (first run only)…
+      [                        ] 0% · 717 B / 106 MB
+      fetching weights: onnx/model_quantized.onnx
+      [==                      ] 10% · 11 MB / 106 MB
+      [=====                   ] 20% · 21 MB / 106 MB
+      [=======                 ] 30% · 32 MB / 106 MB
+      [==========              ] 40% · 42 MB / 106 MB
+      [============            ] 50% · 53 MB / 106 MB
+      [==============          ] 60% · 64 MB / 106 MB
+      [=================       ] 70% · 74 MB / 106 MB
+      [===================     ] 80% · 85 MB / 106 MB
+      [======================  ] 90% · 95 MB / 106 MB
+      [========================] 100% · 106 MB / 106 MB
+      [========================] 100% · 106 MB / 106 MB
+      worker 1/1 ready · downloaded + loaded in 5.7s
+  + local embeddings  1 worker ready · native backend · 5.7s
+[Workflow] Document rYCHBy3xVdXeEKhdqbFh7R stored 1 embedded chunks
+[workflow] maintain-container-description ✗ Step "maintain-container-description" timed out after 30000ms
+[Workflow] Document rYCHBy3xVdXeEKhdqbFh7R embedding 1 chunks (1 batches)
+[Workflow] Document rYCHBy3xVdXeEKhdqbFh7R stored 1 embedded chunks
+[workflow] maintain-container-description ✗ Rollback traversal halted

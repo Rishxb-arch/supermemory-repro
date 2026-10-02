@@ -1,0 +1,23 @@
+{
+    "connectionId": null,
+    "content": "I am vegetarian.",
+    "createdAt": "2026-10-02T16:03:32.998Z",
+    "customId": null,
+    "id": "rYCHBy3xVdXeEKhdqbFh7R",
+    "metadata": {},
+    "ogImage": null,
+    "raw": null,
+    "source": "api",
+    "taskType": "memory",
+    "status": "indexing",
+    "dreamingStatus": "done",
+    "summary": null,
+    "title": "I am vegetarian.",
+    "type": "text",
+    "updatedAt": "2026-10-02T16:03:39.434Z",
+    "url": null,
+    "filepath": null,
+    "containerTags": [
+        "u1"
+    ]
+}
